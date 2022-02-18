@@ -4,21 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --require dotenv/config index.js"
+    "dev": "nodemon -r esm index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
     "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/register": "^7.17.0",
+    "babel-cli": "^6.26.0",
     "bcrypt": "^5.0.1",
+    "esm": "^3.2.25",
     "express": "^4.17.3",
     "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
     "passport": "^0.5.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.16.1",
+    "sequelize-cli": "^6.4.1"
   }
 }
